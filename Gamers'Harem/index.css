@@ -14,8 +14,22 @@ header {
 .container {
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    max-width: 3000px;
     margin: 0 auto;
-    color: #ea3d4e;
-    font-family: 'Press Start 2P', cursive; /* Usa il font pixelato */
+}
+
+.container a {
+    text-decoration: none; /* Rimuovi la sottolineatura del link */
+    color: #ea3d4e; /* Imposta il colore del testo come desiderato */
+    font-family: 'Press Start 2P', cursive;
+    display: flex; /* Per evitare che il link cambi di dimensione al passaggio del mouse */
+    align-items: center; /* Allinea il testo verticalmente al centro */
+}
+
+.container img {
+    width: 2%;
+}
+
+.container h1 {
+    margin-left: 10px;
 }
