@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    border-bottom: 1px solid;
+    border-bottom-color: #ea3d4e;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ea3d4e;
+    font-family: 'Press Start 2P', cursive; /* Usa il font pixelato */
+}
