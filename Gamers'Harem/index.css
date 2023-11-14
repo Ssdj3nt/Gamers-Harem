@@ -1,6 +1,6 @@
 body {
+    background-color: gold;
     margin: 0;
-    background-color: black;
 }
 
 header {
@@ -15,15 +15,15 @@ header {
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
-    padding-left: 20px; /* Aggiungi uno spazio a sinistra del contenuto */
+    padding-left: 20px;
 }
 
 .container a {
-    text-decoration: none; /* Rimuovi la sottolineatura del link */
-    color: gold; /* Imposta il colore del testo come desiderato */
+    text-decoration: none;
+    color: gold;
     font-family: 'Press Start 2P', cursive;
-    display: flex; /* Per evitare che il link cambi di dimensione al passaggio del mouse */
-    align-items: center; /* Allinea il testo verticalmente al centro */
+    display: flex;
+    align-items: center;
 }
 .container a h1 {
     margin-left: 10px;
@@ -50,15 +50,15 @@ header {
 .search-box {
     display: flex;
     align-items: center;
-    margin-left: 10px; /* Aggiunto margine a sinistra per allinearla correttamente */
+    margin-left: 10px;
 }
 
 .search-box input {
     padding: 8px;
     margin-right: 5px;
     border: 1px solid gold;
-    border-radius: 5px;
-    background-color: #293133;
+    border-radius: 15px;
+    background-color: black;
     color: gold;
 }
 
