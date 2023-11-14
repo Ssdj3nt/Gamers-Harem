@@ -14,8 +14,9 @@ header {
 .container {
     display: flex;
     align-items: center;
-    max-width: 3000px;
+    max-width: 100%;
     margin: 0 auto;
+    padding-left: 20px; /* Aggiungi uno spazio a sinistra del contenuto */
 }
 
 .container a {
@@ -27,6 +28,7 @@ header {
 }
 .container a h1 {
     margin-left: 10px;
+    font-size: 24px;
     font-family: 'Press Start 2P', cursive;
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
@@ -35,11 +37,45 @@ header {
 
 .navbar-list{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-link {
     text-decoration: none;
     margin-right: 20px;
 }
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Aggiunto margine a sinistra per allinearla correttamente */
+}
+
+.search-box input {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    background-color: gold;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.mobile-menu-icon {
+    display: none; /* Nascondi l'icona del menu su schermi più grandi */
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 
