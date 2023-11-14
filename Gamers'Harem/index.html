@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamers'Harem - Marketplace</title>
-    <!-- favicon
-    -->
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
 </head>
 <body>
 <header>
     <div class="container">
         <a href="index.html">
-            <img src="./favicon.png" alt="Logo" style="width: 6%;">
+            <img src="./favicon.png" alt="Logo" style="width: 5%;">
             <h1 style="margin-left: 10px;"> Gamers'Harem </h1>
         </a>
 
@@ -30,13 +29,11 @@
                         <li> <a href="#" class="navbar-link">Contact</a> </li>
                         <li>
                             <div class="search-box">
-                                <input type="text" placeholder="Search">
-                                <button type="submit">Search</button>
+                                <input type="text" id="searchInput" placeholder="Cerca" onkeydown="searchOnEnter(event)">
                             </div>
+                        </li>
                     </ul>
-
                 </nav>
-
             </div>
         </div>
     </div>
