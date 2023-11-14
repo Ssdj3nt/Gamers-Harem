@@ -6,11 +6,11 @@ body {
 header {
     background-color: black;
     border-bottom: 1px solid;
-    border-bottom-color: grey;
+    border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
 }
-
 .container {
     display: flex;
     align-items: center;
@@ -25,3 +25,21 @@ header {
     display: flex; /* Per evitare che il link cambi di dimensione al passaggio del mouse */
     align-items: center; /* Allinea il testo verticalmente al centro */
 }
+.container a h1 {
+    margin-left: 10px;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-link {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
