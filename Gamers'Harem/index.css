@@ -6,7 +6,7 @@ body {
 header {
     background-color: black;
     border-bottom: 1px solid;
-    border-bottom-color: #ea3d4e;
+    border-bottom-color: grey;
     margin: 0;
     padding: 10px 0;
 }
@@ -20,16 +20,8 @@ header {
 
 .container a {
     text-decoration: none; /* Rimuovi la sottolineatura del link */
-    color: #ea3d4e; /* Imposta il colore del testo come desiderato */
+    color: gold; /* Imposta il colore del testo come desiderato */
     font-family: 'Press Start 2P', cursive;
     display: flex; /* Per evitare che il link cambi di dimensione al passaggio del mouse */
     align-items: center; /* Allinea il testo verticalmente al centro */
-}
-
-.container img {
-    width: 2%;
-}
-
-.container h1 {
-    margin-left: 10px;
 }
