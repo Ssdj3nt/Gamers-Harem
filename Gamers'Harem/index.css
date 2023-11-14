@@ -1,21 +1,28 @@
 body {
     background-color: gold;
     margin: 0;
+    padding: 0;
+    padding-top: 70px;
 }
 
 header {
-    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 10px; /* Margine a sinistra */
+    right: 10px; /* Margine a destra */
+    width: calc(100% - 20px); /* Larghezza totale - somma margini sinistro e destro */
+    z-index: 1000;
     background-color: black;
-    border-bottom: 1px solid;
-    border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    border-image-slice: 1;
+    margin-top: 10px;
+    border-radius: 15px;
 }
+
 .container {
     display: flex;
     align-items: center;
     max-width: 100%;
-    margin: 0 auto;
     padding-left: 20px;
+    border-radius: 15px;
 }
 
 .container a {
@@ -25,21 +32,19 @@ header {
     display: flex;
     align-items: center;
 }
+
 .container a h1 {
-    margin-left: 10px;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Press Start 2P', cursive;
-    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.navbar-list{
+.navbar-list {
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar-link {
@@ -50,16 +55,12 @@ header {
 .search-box {
     display: flex;
     align-items: center;
-    margin-left: 10px;
 }
 
 .search-box input {
     padding: 8px;
-    margin-right: 5px;
-    border: 1px solid gold;
+    border: 2px solid gold;
     border-radius: 15px;
     background-color: black;
     color: gold;
 }
-
-
