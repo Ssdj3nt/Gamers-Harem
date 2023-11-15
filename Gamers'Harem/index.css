@@ -1,27 +1,30 @@
 body {
     background-color: gold;
-    margin: 0;
-    padding: 0;
     padding-top: 70px;
 }
 
 header {
     position: fixed;
-    top: 0;
-    left: 10px; /* Margine a sinistra */
-    right: 10px; /* Margine a destra */
-    width: calc(100% - 20px); /* Larghezza totale - somma margini sinistro e destro */
-    z-index: 1000;
-    background-color: black;
-    margin-top: 10px;
+    top: 15px;
+    left: 15px;
+    right: 15px;
     border-radius: 15px;
+    background-color: black;
+}
+
+.header-right{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+header img{
+    width: 5%;
 }
 
 .container {
     display: flex;
-    align-items: center;
-    max-width: 100%;
-    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 20px;
     border-radius: 15px;
 }
 
@@ -35,10 +38,10 @@ header {
 
 .container a h1 {
     font-size: 25px;
-    font-family: 'Press Start 2P', cursive;
     background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
     -webkit-background-clip: text;
     color: transparent;
+    margin-left: 10px;
 }
 
 .navbar-list {
@@ -60,8 +63,7 @@ header {
 .search-box input {
     padding: 8px;
     border: 2px solid gold;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: black;
     color: gold;
 }
-
