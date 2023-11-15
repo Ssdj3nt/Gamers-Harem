@@ -10,21 +10,31 @@ header {
     right: 15px;
     border-radius: 15px;
     background-color: black;
+    overflow: hidden; /* Hide overflow content */
 }
 
-.header-right{
-    margin-left: auto;
-    margin-right: 20px;
+.main-logo {
+    width: 30px;
+    margin-right: auto;
+    margin-left: 20px;
 }
 
-header img{
-    width: 5%;
+.cart-logo {
+    width: 35px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.login-logo {
+    width: 30px;
+    margin-left: 5px;
 }
 
 .container {
     display: flex;
-    margin-right: auto;
-    margin-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
     border-radius: 15px;
 }
 
@@ -42,6 +52,7 @@ header img{
     -webkit-background-clip: text;
     color: transparent;
     margin-left: 10px;
+    margin-right: 150px;
 }
 
 .navbar-list {
@@ -56,6 +67,7 @@ header img{
 .search-box {
     display: flex;
     align-items: center;
+    margin-left: 150px;
 }
 
 .search-box input {
