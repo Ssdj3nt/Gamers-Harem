@@ -4,6 +4,7 @@ body {
 }
 
 header {
+    height: 70px;
     position: fixed;
     top: 15px;
     left: 15px;
@@ -13,43 +14,39 @@ header {
     overflow: hidden;
 }
 
+.navbar-name-site {
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    list-style-type: none;
+    margin-right: 150px;
+    color: gold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .main-logo {
     width: 30px;
-    margin-left: 20px;
+    margin-right: 10px;
 }
 
 .cart-logo {
-    width: 35px;
-    margin-right: 5px;
-    margin-left: 20px;
+    width: 30px;
+    margin-right: 20px;
 }
 
 .login-logo {
     width: 30px;
-    margin-left: 5px;
 }
 
-.container {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.container a {
-    text-decoration: none;
-    color: gold;
-    font-family: 'Press Start 2P', cursive;
-    display: flex;
-    align-items: center;
-}
-
-.container a h1 {
-    font-size: 25px;
-    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-left: 10px;
-    margin-right: 150px;
+    height: 100%; /* Imposta l'altezza della navbar al 100% rispetto all'altezza dell'header */
 }
 
 .navbar-list {
@@ -58,21 +55,27 @@ header {
 }
 
 .navbar-link {
+    color: gold;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .search-box {
     display: flex;
     align-items: center;
-    margin-left: 150px;
 }
 
 .search-box input {
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-indent: 0;
     border: 2px solid gold;
     border-radius: 10px;
     background-color: black;
     color: gold;
-    outline: none;
+    margin-right: 20px;
+    margin-left: 130px;
 }
