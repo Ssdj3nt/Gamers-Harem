@@ -1,3 +1,4 @@
+/* Stile di base senza margin-right */
 body {
     background-color: gold;
     padding-top: 80px;
@@ -46,12 +47,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Imposta l'altezza della navbar al 100% rispetto all'altezza dell'header */
+    height: 100%;
 }
 
 .navbar-list {
     display: flex;
     align-items: center;
+}
+
+/* Aggiungi stili CSS per l'icona del menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: gold;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
 .navbar-link {
@@ -61,6 +76,11 @@ header {
     align-items: center;
     font-size: 15px;
     margin-right: 20px;
+    text-decoration: none;
+}
+
+/* Rimuovi la sottolineatura al passaggio del mouse */
+.navbar-link:hover {
     text-decoration: none;
 }
 
@@ -78,4 +98,22 @@ header {
     color: gold;
     margin-right: 20px;
     margin-left: 130px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-name-site {
+        margin-right: 50px;
+    }
+    .search-box input{
+        margin-left: 30px;
+    }
+
+    /* Aggiungi regole CSS per l'icona del menu quando la larghezza dello schermo è ridotta */
+    .navbar-link {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
