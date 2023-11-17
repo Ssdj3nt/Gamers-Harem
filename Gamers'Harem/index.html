@@ -9,46 +9,35 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
-    <style>
-        /* Aggiungi stili CSS per l'icona del menu */
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-
-        .bar {
-            width: 25px;
-            height: 3px;
-            background-color: gold;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-    </style>
 </head>
 <body>
 <header>
     <nav class="navbar" data-navbar>
-        <div class="navbar-list">
-            <!-- Icona del menu -->
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <img class="main-logo" src="favicon.png" alt="main-logo">
+        <li> <a href="#" class="navbar-name-site"> Gamers'Harem </a> </li>
+        <li class="navbar-link"> <a href="#">PC</a> </li>
+        <li class="navbar-link"> <a href="#">PlayStation</a> </li>
+        <li class="navbar-link"> <a href="#">Xbox</a> </li>
+        <li class="navbar-link"> <a href="#">Nintendo</a> </li>
+        <li class="menu-icon">
+            <a href="#" id="menuIcon" onclick="toggleMobileMenu()">
+                <img src="menu.png" alt="Menu Icon">
+            </a>
+        </li>
+        <li> <div class="search-box"> <input type="text" id="searchInput" placeholder="Cerca" onkeydown="searchOnEnter(event)"> </div> </li>
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="#" id="closeMenu" onclick="toggleMobileMenu()">
+                    <img src="close-icon.png" alt="Close Icon">
+                </a>
             </div>
-
-            <img class="main-logo" src="./menu.png" alt="Logo">
-            <li> <a href="#" class="navbar-name-site"> Gamers'Harem </a> </li>
-
-            <!-- Aggiungi classe 'navbar-link' alla lista degli elementi della navbar -->
-            <li class="navbar-link"> <a href="#">Esplora</a> </li>
-            <li class="navbar-link"> <a href="#">Categorie</a> </li>
-            <li class="navbar-link"> <a href="#">Contatti</a> </li>
-            <li class="navbar-link"> <a href="#">About</a> </li>
-
-            <li> <div class="search-box"> <input type="text" id="searchInput" placeholder="Cerca" onkeydown="searchOnEnter(event)"> </div> </li>
-            <li> <a href="#"> <img class="cart-logo" src="carrello.png" alt="Logo carrello"> </a> </li>
-            <li> <a href="#"> <img class="login-logo" src="login.png" alt="Logo login"> </a> </li>
+            <li class="navbar-link"><a href="#">PC</a></li>
+            <li class="navbar-link"><a href="#">PlayStation</a></li>
+            <li class="navbar-link"><a href="#">Xbox</a></li>
+            <li class="navbar-link"><a href="#">Nintendo</a></li>
         </div>
+        <li> <a href="#"> <img class="cart-logo" src="carrello.png" alt="Logo carrello"> </a> </li>
+        <li> <a href="#"> <img class="login-logo" src="login.png" alt="Logo login"> </a> </li>
     </nav>
 </header>
 </body>
