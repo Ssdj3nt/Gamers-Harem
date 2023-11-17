@@ -1,0 +1,44 @@
+body {
+    background-color: gold; /* Imposta il colore di sfondo a giallo */
+}
+
+.pippo{
+    content: "onii";
+    font-size: 25px;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 10px;
+}
+
+/* Stile per il nome del sito */
+.navbar-brand {
+    text-decoration: none;
+    color: gold;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.navar-band img {
+    width: 30px;
+    height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni originali */
+    margin-right: 10px;
+}
+
+.custom-nav-link {
+    font-size: 13px;
+    margin-right: 15px;
+    background-color:"";/* Imposta il colore di sfondo dei tasti */
+    padding: 5px 10px; /* Aggiungi un po' di spazio interno ai tasti */
+    border-radius: 5px; /* Aggiungi un bordo arrotondato ai tasti se desiderato */
+    color: gold; /* Imposta il colore del testo dei tasti */
+    text-decoration: none; /* Rimuovi il sottolineato del testo dei tasti */
+    font-family: 'Press Start 2P', cursive; /* Aggiungi la regola per il font */
+}
+
+.custom-nav-link:hover {
+    background-color:""; /* Cambia il colore di sfondo al passaggio del mouse se desiderato */
+    color: white; /* Cambia il colore del testo al passaggio del mouse se desiderato */
+}
+
