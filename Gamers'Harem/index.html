@@ -8,36 +8,37 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-GLhlTQ8i1ifw9FfMq3LW1a+x4iTEIfgApszHssAnX4P3UqqL6b8L5AD2tNFbPf70" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
 </head>
 <body>
 <header>
     <nav class="navbar" data-navbar>
         <img class="main-logo" src="favicon.png" alt="main-logo">
-        <li> <a href="#" class="navbar-name-site"> Gamers'Harem </a> </li>
-        <li class="navbar-link"> <a href="#">PC</a> </li>
-        <li class="navbar-link"> <a href="#">PlayStation</a> </li>
-        <li class="navbar-link"> <a href="#">Xbox</a> </li>
-        <li class="navbar-link"> <a href="#">Nintendo</a> </li>
-        <li class="menu-icon">
-            <a href="#" id="menuIcon" onclick="toggleMobileMenu()">
-                <img src="menu.png" alt="Menu Icon">
-            </a>
-        </li>
-        <li> <div class="search-box"> <input type="text" id="searchInput" placeholder="Cerca" onkeydown="searchOnEnter(event)"> </div> </li>
-        <div id="mobileMenu" class="mobile-menu">
-            <div class="mobile-menu-header">
-                <a href="#" id="closeMenu" onclick="toggleMobileMenu()">
-                    <img src="close-icon.png" alt="Close Icon">
+        <a href="#" class="navbar-name-site"> Gamers'Harem </a>
+        <a class="navbar-link" href="#">PC</a>
+        <a class="navbar-link" href="#">PlayStation</a>
+        <a class="navbar-link" href="#">Xbox</a>
+        <a class="navbar-link" href="#">Nintendo</a>
+        <div class="menu-container">
+            <button class="menu-icon" onclick="toggleMenu()">
+                <a href="#" id="menuIcon" class="menu-icon">
+                    <img src="menu.png" alt="Menu Icon">
                 </a>
+            </button>
+            <div class="menu-content">
+                <a class="menu-link" href="#">PC</a>
+                <a class="menu-link" href="#">PlayStation</a>
+                <a class="menu-link" href="#">Xbox</a>
+                <a class="menu-link" href="#">Nintendo</a>
             </div>
-            <li class="navbar-link"><a href="#">PC</a></li>
-            <li class="navbar-link"><a href="#">PlayStation</a></li>
-            <li class="navbar-link"><a href="#">Xbox</a></li>
-            <li class="navbar-link"><a href="#">Nintendo</a></li>
         </div>
-        <li> <a href="#"> <img class="cart-logo" src="carrello.png" alt="Logo carrello"> </a> </li>
-        <li> <a href="#"> <img class="login-logo" src="login.png" alt="Logo login"> </a> </li>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cerca" onkeydown="searchOnEnter(event)">
+        </div>
+        <a href="#"> <img class="cart-logo" src="carrello.png" alt="Logo carrello"> </a>
+        <a href="#"> <img class="login-logo" src="login.png" alt="Logo login"> </a>
     </nav>
 </header>
 </body>
