@@ -141,10 +141,12 @@ header {
     .menu-content a span {
         display: inline-block;
         width: 200px;
+        height: 25px;
         padding: 5px 10px;
         border-radius: 10px;
         background-color: black;
         text-align: center;
+        line-height: 25px;
     }
 }
 
