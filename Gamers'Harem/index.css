@@ -119,34 +119,33 @@ header {
 
     .menu-content {
         position: fixed;
-        background-color: #f9f9f9;
-        top: 90px;
-        transform: translateX(-40%);
-        padding-top: 12px;
+        transform: translateX(-42%);
+        padding-top: 40px;
         padding-right: 30px;
         padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
     }
-}
 
-.menu-content{
-    display: none;
-}
+    .menu-content a {
+        color: gold;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
 
-.menu-content a {
-    color: gold;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
-    padding-bottom: 15px;
-}
-
-.menu-content {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
+    .menu-content a span {
+        display: inline-block;
+        width: 200px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: black;
+        text-align: center;
+    }
 }
 
 .menu-container:not(:hover) .menu-content {
