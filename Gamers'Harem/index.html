@@ -8,8 +8,6 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-GLhlTQ8i1ifw9FfMq3LW1a+x4iTEIfgApszHssAnX4P3UqqL6b8L5AD2tNFbPf70" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
 </head>
 <body>
@@ -17,21 +15,25 @@
     <nav class="navbar" data-navbar>
         <img class="main-logo" src="favicon.png" alt="main-logo">
         <a href="#" class="navbar-name-site"> Gamers'Harem </a>
-        <a class="navbar-link" href="#">PC</a>
-        <a class="navbar-link" href="#">PlayStation</a>
-        <a class="navbar-link" href="#">Xbox</a>
-        <a class="navbar-link" href="#">Nintendo</a>
+
+        <div class="navbar-link">
+            <a href="#">PC</a>
+            <a href="#">PlayStation</a>
+            <a href="#">Xbox</a>
+            <a href="#">Nintendo</a>
+        </div>
+
         <div class="menu-container">
-            <button class="menu-icon" onclick="toggleMenu()">
+            <button class="menu-icon">
                 <a href="#" id="menuIcon" class="menu-icon">
                     <img src="menu.png" alt="Menu Icon">
                 </a>
             </button>
             <div class="menu-content">
-                <a class="menu-link" href="#">PC</a>
-                <a class="menu-link" href="#">PlayStation</a>
-                <a class="menu-link" href="#">Xbox</a>
-                <a class="menu-link" href="#">Nintendo</a>
+                <a href="#">PC</a>
+                <a href="#">PlayStation</a>
+                <a href="#">Xbox</a>
+                <a href="#">Nintendo</a>
             </div>
         </div>
         <div class="search-box">
