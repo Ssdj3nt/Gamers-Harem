@@ -11,7 +11,7 @@
 
     <style>
         .custom-nav-link {
-            font-size: 18px; /* Dimensione del font personalizzata */
+            font-size: 12px; /* Dimensione del font personalizzata */
             margin-right: 15px; /* Spazio a destra tra i tasti */
         }
     </style>
@@ -20,23 +20,28 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./images/favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            <span class="pippo">Gamers'Harem</span>          </a>
+            <img src="./images/favicon.png" alt="" width="45" height="35" class="d-inline-block align-text-top" style="margin-bottom: 5px;"> 
+            <span class="pippo">Gamers'Harem</span>          
+          </a>
 
-          <div class="d-flex justify-content-center align-items-center">
+          <div class="d-none d-lg-flex justify-content-center align-items-center">
             <!-- Aggiungi 5 tasti cliccabili al centro -->
             <a class="nav-link custom-nav-link text-gold" href="#">PC</a>
             <a class="nav-link custom-nav-link text-gold" href="#">Playstation</a>
             <a class="nav-link custom-nav-link text-gold" href="#">Xbox</a>
             <a class="nav-link custom-nav-link text-gold" href="#">Nintendo</a>
+        </div> 
+        
+        <div class="box">
+          <form name="search">
+              <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+              <i class="fas fa-search"></i>
+          </form>
+          <i class="fas fa-search"></i>
         </div>
-      
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">           
-            
                 <!--Dropdown menu-->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="color: #212529; border-color: gold;background-color: #212529;">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
@@ -45,12 +50,12 @@
                         <li><a class="dropdown-item" href="#">NON ENTRA</a></li>
                     </ul>
                 </div>
-                </form>
-                </div>
+              </form>
+        </div>
     </nav>
     <div class="container my-5 text-center" style="max-width: 580px"> <!--dichiariamo il container e l'allineazione-->
         <h1> Benvenuti su Gamers'Harem </h1>
-    <p class="lead">Adesso site pregati di darci i vostri soldi.
+    <p class="lead">Adesso siete pregati di darci i vostri soldi.
     </p>
     </div>
 
@@ -59,24 +64,33 @@
             <div class="col-sm">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/bggg2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Baldur's Gate III 40.00€</p>
+                    <div class="card-body d-flex-column" style="background-color: #212529;">
+                      <div class="d-flex justify-content-between">
+                          <p class="card-text game-name" style="color: white;">Baldur's Gate III</p>
+                          <p class="card-text price" style="color: gold;">40.00€</p>
+                      </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col">
+                </div>
+              </div>
+            <div class="col-sm">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/spidey.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Marvel's Spider-Man 2 PS5 71.37€</p>
+                    <div class="card-body d-flex flex-column" style="background-color: #212529;">
+                      <div class="d-flex justify-content-between">
+                          <p class="card-text game-name" style="color: white;">Marvel's Spider-Man 2</p>
+                          <p class="card-text price" style="color: gold;">71.15€</p>
+                      </div>
                     </div>
                   </div>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/zelda.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">The Legend of Zelda: Tears of the Kingdom  78.19€</p>
+                    <div class="card-body d-flex flex-column" style="background-color: #212529;">
+                      <div class="d-flex justify-content-between">
+                          <p class="card-text game-name" style="color: white;">The Legend of Zelda: Tears of the Kingdom</p>
+                          <p class="card-text price" style="color: gold;">78.19€</p>
+                      </div>
                     </div>
                   </div>
                 </div>
