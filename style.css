@@ -3,9 +3,10 @@ body {
 }
 
 .pippo{
-    content: "onii";
+    content: "";
     font-size: 25px;
     background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     margin-left: 10px;
@@ -27,10 +28,10 @@ body {
 }
 
 .custom-nav-link {
-    font-size: 13px;
+    font-size: 12px;
     margin-right: 15px;
     background-color:"";/* Imposta il colore di sfondo dei tasti */
-    padding: 5px 10px; /* Aggiungi un po' di spazio interno ai tasti */
+    padding: 5px 10px; /* Aggiunge un po' di spazio interno ai tasti */
     border-radius: 5px; /* Aggiungi un bordo arrotondato ai tasti se desiderato */
     color: gold; /* Imposta il colore del testo dei tasti */
     text-decoration: none; /* Rimuovi il sottolineato del testo dei tasti */
@@ -42,3 +43,83 @@ body {
     color: white; /* Cambia il colore del testo al passaggio del mouse se desiderato */
 }
 
+.card {
+    border-radius: 15px; /* Puoi regolare il valore a tuo piacimento */
+    overflow: hidden;
+    margin-bottom: 15px; /* Aggiunge spazio alla parte inferiore della card */
+    display: flex;
+    align-items: stretch;
+}
+
+.card-img-top {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card .game-name,
+.card .price {
+    margin: 0;
+}
+
+.card .game-name {
+    color: white;
+}
+
+.card .price {
+    color: gold;
+    text-align: right;
+}
+
+.card-img-top {
+    width: 100%; /* Assicura che l'immagine riempia completamente la larghezza della card */
+    border-bottom-left-radius: 0; /* Imposta la parte inferiore sinistra dell'immagine senza arrotondamento */
+    border-bottom-right-radius: 0; /* Imposta la parte inferiore destra dell'immagine senza arrotondamento */
+}
+
+.box{
+    position: relative;
+}
+
+.input{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: 4px solid gold;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 13px;
+    color: gold;
+    outline: none;
+    transition: .5s;
+}
+
+.box:hover input{
+    width: 350px;
+    height: 40px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+
+.box i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 13px;
+    color: gold;
+    transition: .2s;
+    height: 40px; /* Modifica l'altezza desiderata */
+    line-height: 40px;
+}
+
+.box input {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
