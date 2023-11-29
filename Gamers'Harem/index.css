@@ -13,6 +13,7 @@ header {
     height: 80px;
     width: calc(100% - 30px);
     margin: 15px;
+    overflow: hidden;
 }
 
 .navbar-name-site {
@@ -155,19 +156,10 @@ header {
     background-color: black;
     border-radius: 15px;
     margin: 15px;
-    height: 200px;
     align-items: center;
     justify-content: center;
     height: 100%;
     overflow: hidden;
-}
-
-.contact,.about-us{
-    display: inline-block;
-    color: gold;
-    font-size: 15px;
-    font-family: 'Press Start 2P', cursive;
-    margin: 20px;
 }
 
 h1 {
@@ -176,37 +168,34 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-scrolling: auto;
+    margin: 15px;
 }
 
-
-.about-us,.contact{
-    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.element{
-    display: flex;
-    color: gold;
-    text-decoration: none;
-}
-
-.content a span{
+.content span{
     background-color: #2C2C2C;
     border-radius: 15px;
-    height: 25px;
-    margin-top: 10px;
 }
+
 .field{
-    font-size: 25px;
-    display: block;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: red;
+    margin: 15px;
+    
 }
 
+.field span{
+    background-color: #2C2C2C;
+    border-radius: 15px;
+}
 .content{
-    color: gold;
+    color: yellow;
+    margin-right: 50px;
 }
 
-.content a span{
+.content span{
     background-color: #2C2C2C;
     border-radius: 15px;
 }
