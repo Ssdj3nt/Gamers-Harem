@@ -123,3 +123,20 @@ body {
     opacity: 0;
     z-index: -1;
 }
+
+/*parte delle immagini per ogni pagina html*/
+.image-container{
+    margin-top: 220px; /* Aggiungi uno spazio tra i riquadri */
+    width: 400px; /* Imposta la larghezza del riquadro */
+    height: auto;
+    margin-left: 200px;
+    margin-right: auto;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Rimuovi spazi bianchi aggiuntivi sotto le immagini */
+      margin-left: auto;
+      margin-right: auto;
+    }
