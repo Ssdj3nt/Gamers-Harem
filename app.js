@@ -8,4 +8,3 @@
       element.innerText = truncatedText;
     });
   });
-
