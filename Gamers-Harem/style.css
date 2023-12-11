@@ -6,18 +6,12 @@ body {
 .main-title,
 .sub-title{
     text-align: center;
+    color: black;
 }
 
 .sub-title{
     font-size: 20px;
     padding-bottom: 30px;
-    color: black;
-}
-
-.main-title{
-    padding-top: 30px;
-    padding-bottom: 5px;
-    color: black;
 }
 
 .card {
@@ -107,7 +101,7 @@ header::before{
         height: 100px;
     }
 }
-@media screen and (min-width: 682px){
+@media screen and (min-width: 695px){
     .nav{
         top: 90px;
     }
@@ -120,6 +114,10 @@ header::before{
     .modal-content{
         margin: 100px auto;
     }
+    .main-title{
+        padding-top: 15px;
+    }
+
 }
 @media screen and (max-width: 694px){
     .navbar {
@@ -128,14 +126,14 @@ header::before{
     .nav{
         top: 130px;
     }
-    .main-title .h3{
-        margin-top: 40px;
+    .main-title{
+        padding-top: 45px;
     }
     .login-box {
         top: 130px;
     }
     .modal-content{
-        margin: 130px auto;
+        margin: 140px auto;
     }
 }
 @media screen and (max-width: 575px){
