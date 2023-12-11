@@ -1,0 +1,367 @@
+body{
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:contain;
+    background-position: right;
+  }
+
+  .login-box {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #212529;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #212529;
+    border-radius: 10px;
+  }
+
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: gold;
+    text-align: center;
+  }
+
+  .login-box .user-box {
+    position: relative;
+  }
+
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gold;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid gold;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gold;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: gold;
+    font-size: 12px;
+  }
+
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: gold;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  .login-box a:hover {
+    background: gold;
+    color: #2C2C2C;
+    border-radius: 15px;
+    box-shadow: 0 0 5px gold,
+    0 0 25px gold;
+  }
+
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, gold);
+    animation: btn-anim1 1s linear infinite;
+  }
+
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, gold);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, gold);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, gold);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1092px) {
+    body {
+      background-image: none;
+    }
+
+    .login-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: #212529;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px #212529;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    body {
+      background-image: none;
+    }
+
+    .login-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 350px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: #212529;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px #212529;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    body {
+      background-image: none;
+    }
+
+    .login-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: #212529;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px #212529;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+  }
+
+.navbar-name-site {
+  display: flex;
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  align-items: center;
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, pink);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-logo {
+  width: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.cart-logo {
+  width: 32px;
+  margin-right: 15px;
+}
+
+.login-logo {
+  width: 30px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 683px){
+  .nav{
+    top: 90px;
+  }
+  .navbar{
+    height: 80px;
+  }
+}
+@media screen and (max-width: 682px){
+  .navbar {
+    height: 120px;
+  }
+  .nav{
+    top: 130px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-logo{
+    display: none;
+  }
+  .navbar-name-site{
+    font-size: 20px;
+  }
+}
+
+.navbar {
+  justify-content: center;
+  position: fixed;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  overflow: hidden;
+  transition: border-radius 0.2s;
+  width: calc(100% - 20px);
+  z-index: 1000;
+}
+
+.nav {
+  display: none;
+  width: calc(100% - 20px);
+  position: fixed;
+  justify-content: center;
+  border-radius: 0 0 15px 15px;
+  background-color: #2C2C2C;
+  margin: 0;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.nav.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav a {
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+}
+
+.nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+.nav li{
+  margin-bottom: 15px;
+  list-style: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: gold;
+  margin: 5px 0;
+  border-radius: 15px;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box input {
+  width: 160px;
+  height: 45px;
+  border: 2px solid gold;
+  border-radius: 15px;
+  background-color: #2C2C2C;
+  color: gold;
+  outline: none;
+  text-align: center;
+  margin-right:15px;
+}
+
+.background-img{
+  position: fixed;
+  right: 0;
+  width: 100vh;
+  padding-left: 10px;
+}
+
+
