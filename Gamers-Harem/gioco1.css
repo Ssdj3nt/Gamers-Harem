@@ -72,6 +72,9 @@ p{
         flex: 100%;
         max-width: 100%;
     }
+    .game-info p{
+        margin: 10px;
+    }
 }
 
 .cover-bottom-bar{
