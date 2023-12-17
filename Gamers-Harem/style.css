@@ -1,7 +1,7 @@
 body {
     background-color: gold;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main-title,
@@ -12,17 +12,15 @@ body {
 
 .sub-title{
     font-size: 20px;
-    margin-bottom: 45px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .main-title h3{
-    margin-top: 45px;
     font-weight: bold;
     font-size: 45px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .card {
@@ -91,6 +89,55 @@ header::before{
     margin-left: 7px;
 }
 
+@media screen and (min-width: 741px) {
+    .modal-content {
+        width: 700px;
+        margin-top: 180px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .modal-content {
+        width: 100%;
+        margin-top: 220px;
+    }
+}
+@media screen and (max-width: 511px) {
+    .modal-content {
+        width: 100%;
+        margin-top: 230px;
+    }
+}
+@media screen and (max-width: 407px) {
+    .modal-content {
+        width: 100%;
+        margin-top: 245px;
+    }
+}
+@media screen and (min-width: 743px){
+    .sub-title{
+        margin-bottom: 70px;
+    }
+    .main-title h3{
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 742px){
+    .sub-title{
+        margin-bottom: 55px;
+    }
+    .main-title h3{
+        margin-top: 55px;
+    }
+}
+@media screen and (max-width: 740px){
+    .sub-title{
+        margin-bottom: 60px;
+    }
+    .main-title h3{
+        margin-top: 60px;
+    }
+}
 @media screen and (min-width: 992px){
     .card-body{
         height: 80px;
@@ -172,37 +219,17 @@ header::before{
     .main-logo{
         display: none;
     }
-    .modal-content{
-        top: 160px;
-    }
     .nav{
         height: 230px;
     }
-}
-@media screen and (min-width: 651px) {
-    .modal-content{
-        top: 130px;
+    .sub-title{
+        margin-bottom: 45px;
     }
-}
-@media screen and (min-width: 741px) {
-    .modal-content{
-        top: 80px;
-    }
-}
-@media screen and (max-width: 535px) {
-        .modal-content{
-            top: 140px;
-        }
-}
-@media screen and (max-width: 510px){
-    .modal-content{
-        top: 130px;
+    .main-title h3{
+        margin-top: 45px;
     }
 }
 @media screen and (max-width: 407px){
-    .modal-content{
-        top: 150px;
-    }
     .nav{
         height: 260px;
     }
@@ -275,7 +302,7 @@ h3 {
     justify-content: center;
     border-radius: 0 0 15px 15px;
     background-color: #2C2C2C;
-    padding-top: 10px;
+    padding-top: 20px;
     overflow: hidden;
 }
 
@@ -299,7 +326,7 @@ h3 {
 }
 
 .nav li{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     list-style: none;
     text-align: center;
     box-sizing: border-box;
@@ -496,6 +523,8 @@ h4{
 .modal-content {
     border-radius: 15px;
     background-color: #2C2C2C;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .close {
