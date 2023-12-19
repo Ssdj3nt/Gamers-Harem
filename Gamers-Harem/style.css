@@ -18,7 +18,6 @@ body {
 
 .main-title h3{
     font-weight: bold;
-    font-size: 45px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -89,55 +88,7 @@ header::before{
     margin-left: 7px;
 }
 
-@media screen and (min-width: 741px) {
-    .modal-content {
-        width: 700px;
-        margin-top: 180px;
-    }
-}
 
-@media screen and (max-width: 740px) {
-    .modal-content {
-        width: 100%;
-        margin-top: 220px;
-    }
-}
-@media screen and (max-width: 511px) {
-    .modal-content {
-        width: 100%;
-        margin-top: 230px;
-    }
-}
-@media screen and (max-width: 407px) {
-    .modal-content {
-        width: 100%;
-        margin-top: 245px;
-    }
-}
-@media screen and (min-width: 743px){
-    .sub-title{
-        margin-bottom: 70px;
-    }
-    .main-title h3{
-        margin-top: 70px;
-    }
-}
-@media screen and (max-width: 742px){
-    .sub-title{
-        margin-bottom: 55px;
-    }
-    .main-title h3{
-        margin-top: 55px;
-    }
-}
-@media screen and (max-width: 740px){
-    .sub-title{
-        margin-bottom: 60px;
-    }
-    .main-title h3{
-        margin-top: 60px;
-    }
-}
 @media screen and (min-width: 992px){
     .card-body{
         height: 80px;
@@ -152,42 +103,28 @@ header::before{
         height: 80px;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
     .card-body{
         height: 100px;
     }
 }
-@media screen and (min-width: 713px){
-    .nav{
-        top: 90px;
-    }
-    .navbar{
-        height: 80px;
-    }
-    .login-box {
-        top: 90px;
-    }
-    .main-title{
-        padding-top: 15px;
+@media screen and (max-width: 650px){
+    .main-logo{
+        display: none;
     }
 }
-@media screen and (max-width: 740px){
-    .navbar {
-        height: 120px;
+@media  screen and (max-width: 522px){
+    .custom-column {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-    .nav{
-        top: 130px;
-    }
-    .main-title{
-        padding-top: 45px;
-    }
-    .login-box {
-        top: 130px;
+    .card-body{
+        height: 80px
     }
 }
-@media screen and (max-width: 563px){
-    .nav{
-        height: 200px;
+@media screen and (max-height: 700px){
+    .content{
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 575px){
@@ -196,46 +133,118 @@ header::before{
         height: auto;
         width: 400px;
     }
-
     .row{
         justify-content: center;
     }
-
     .field .content{
         font-size: 12px;
     }
 }
-@media  screen and (max-width: 522px) {
-    .custom-column {
-        flex: 0 0 100%;
-        max-width: 100%;
+@media screen and (min-width: 741px){
+    h3{
+        padding-top: 150px;
+        margin-bottom: 10px;
+        font-size: 50px;
     }
-
-    .card-body{
-        height: 80px
+    .main-title p{
+        margin-bottom: 70px;
+        font-size: 20px;
     }
-}
-@media screen and (max-width: 650px) {
-    .main-logo{
-        display: none;
+    .navbar{
+        height: 80px;
     }
     .nav{
-        height: 230px;
+        top: 90px;
     }
-    .sub-title{
-        margin-bottom: 45px;
+    .login-box {
+        top: 90px;
     }
-    .main-title h3{
-        margin-top: 45px;
+    .modal-content{
+        top: 180px;
+    }
+    h4{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 740px){
+    .nav{
+        top: 120px;
+    }
+    .login-box {
+        top: 120px;
+    }
+    h3{
+        padding-top: 170px;
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+    .main-title p{
+        margin-bottom: 60px;
+    }
+    .modal-content{
+        top: 190px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .navbar-name-site,.main-logo,.menu-toggle,.search-box,.cart-logo,.login-logo{
+        margin-bottom: 5px;
+    }
+    .modal-content{
+        top: 210px;
+    }
+}
+@media screen and (max-width: 716px){
+    h3{
+        padding-top: 170px;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    .main-title p{
+        margin-bottom: 55px;
     }
 }
 @media screen and (max-width: 407px){
+    h3{
+        padding-top: 160px;
+    }
+    .main-title p{
+        margin-bottom: 30px;
+    }
+    .login-box{
+        top:125px;
+    }
     .nav{
-        height: 260px;
+        top:125px;
     }
 }
+@media screen and (max-width: 583px){
+    .nav{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 382px){
+   h3{
+       padding-top: 200px;
+   }
+    .main-title p{
+        margin-bottom: 40px;
+    }
+    .nav{
+        top:160px;
+    }
+    .login-box{
+        top: 160px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .modal-content{
+        top: 230px;
+    }
+}
+
+
 h3 {
-    padding-top: 70px;
     display: flex;
     justify-content: center;
 }
@@ -291,8 +300,7 @@ h3 {
     transition: border-radius 0.2s;
     width: calc(100% - 20px);
     z-index: 1000;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 15px 30px;
 }
 
 .nav {
@@ -354,7 +362,7 @@ h3 {
 
 .search-box input {
     width: 160px;
-    height: 45px;
+    height: 40px;
     border: 2px solid gold;
     border-radius: 15px;
     background-color: #2C2C2C;
