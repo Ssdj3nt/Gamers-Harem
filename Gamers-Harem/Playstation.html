@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gamers'Harem</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="console.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img class="main-logo" src="favicon.png" alt="main-logo">
+            <a href="index.html" class="navbar-name-site"> Gamers'Harem </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Pc.html">Pc</a></li>
+                    <li><a href="Playstation.html">Playstation</a></li>
+                    <li><a href="Xbox.html">Xbox</a></li>
+                    <li><a href="Nintendo.html">Nintendo</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="search-box">
+                <label for="searchInput"></label><input type="text" id="searchInput" placeholder="Cerca">
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h4>Carrello Vuoto.</h4>
+                    <h5>Il tuo carrello è come una tela ancora da dipingere.<br>Aggiungi emozionanti avventure e giochi epici per dare vita alla tua esperienza di gioco un clic alla volta!</h5>
+                </div>
+            </div>
+            <img src="carrello.png" alt="Carrello" class="cart-logo" onclick="openModal()">
+            <a href="javascript:void(0);" id="login-menu"><img src="login.png" class="login-logo" alt="..."></a>
+            <nav class="login-box" id="loginMenu">
+                <div class="login-logo-container">
+                    <h1>Login</h1>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="submit-btn">
+                        <a href="#">Invia</a>
+                    </div>
+                    <h2>Non sei registrato?</h2>
+                    <div class="register-btn">
+                        <a href="#" onclick="openRegisterModal()">Registrati</a>
+                    </div>
+                </div>
+
+                <div class="overlay" id="overlayRegister"></div>
+                <div class="modal" id="registerModal">
+                <div class="modal-content">
+                <span class="close" onclick="closeRegisterModal()">&times;</span>
+                  <h1>Registrazione</h1>             
+                  <label for="registerEmail">E-mail:</label>
+                  <input type="email" id="registerEmail" name="registerEmail" required>
+                  <label for="registerName">Nome:</label>
+                  <input type="text" id="registerName" name="registerName" required>
+                  <label for="registerSurname">Cognome:</label>
+                  <input type="text" id="registerSurname" name="registerSurname" required>
+                  <label for="registerPassword">Password:</label>
+                       <div class="password-container">
+                           <input type="password" id="registerPassword" name="registerPassword" required>
+                           <span class="password-toggle" onclick="togglePasswordVisibility()">
+                                <img src="eye.png" alt="Toggle Password Visibility">
+                           </span>
+                       </div>
+
+                  <div class="submit-btn">
+                      <a href="#">Registrati</a>
+                  </div>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="spacer"></div> <!-- Aggiunto uno spazio sopra le cards -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Prima riga di 4 colonne -->
+            <div class="col-md-3">
+                <a href="bg3.html">
+                <div class="card">
+                    <img src="./images/bggg2.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Baldur's Gate III</p>
+                        <p class="card-text text-center";>40.00€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="spider.html">
+                <div class="card">
+                    <img src="./images/spidey.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Marvel's Spider-Man 2</p>
+                        <p class="card-text text-center">71.15€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="fh5.html">
+                <div class="card">
+                    <img src="./images/fh5.png" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Forza Horizon 5</p>
+                        <p class="card-text text-center">29.99€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="mhr.html">
+                <div class="card">
+                    <img src="./images/MHR.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Monster Hunter: Rise</p>
+                        <p class="card-text text-center">15.00€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <a href="bdo.html">
+                <div class="card">
+                    <img src="./images/bd.jpeg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Black Desert</p>
+                        <p class="card-text text-center">9.99€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="star.html">
+                <div class="card">
+                    <img src="./images/starfield.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Starfield</p>
+                        <p class="card-text text-center">39.89€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="diablo.html">
+                <div class="card">
+                    <img src="./images/d4.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Diablo 4</p>
+                        <p class="card-text text-center">62.99€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="battle.html">
+                <div class="card">
+                    <img src="./images/bf2042.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Battlefield 2042</p>
+                        <p class="card-text">10.80€</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer-bottom"></div> <!-- Aggiunto uno spazio sotto le cards -->
+
+    <div class="bottom-area">
+        <div class="field"> About us:
+            <div class="content">
+                <span>Siamo due studenti universitari appassionati di tecnologia e innovazione, entrambi iscritti al corso di Computer Science presso l'Università Parthenope di Napoli.<br>
+                    La nostra missione è esplorare le frontiere della conoscenza informatica e tradurre le nostre passioni in progetti concreti.
+                    Condividiamo l'entusiasmo per le sfide informatiche e l'interesse per le soluzioni creative.</span>
+            </div>
+        </div>
+        <div class="field"> Contatti:
+            <div class="content">
+                <span> francesco.porritiello001@studenti.uniparthenope.it </span>
+                <span> francesco.esposito034@studenti.uniparthenope.it </span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
