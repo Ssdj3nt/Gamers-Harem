@@ -60,5 +60,3 @@ function closeModal() {
     body.classList.remove('grayed-out');
     body.style.overflow = 'auto';
 }
-
-
