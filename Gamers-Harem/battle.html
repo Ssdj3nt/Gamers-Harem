@@ -18,10 +18,10 @@
         <a href="index.html" class="navbar-name-site"> Gamers'Harem </a>
         <nav class="nav">
             <ul>
-                <li><a href="#">Pc</a></li>
-                <li><a href="#">Playstation</a></li>
-                <li><a href="#">Xbox</a></li>
-                <li><a href="#">Nintendo</a></li>
+                <li><a href="Pc.html">Pc</a></li>
+                <li><a href="Playstation.html">Playstation</a></li>
+                <li><a href="Xbox.html">Xbox</a></li>
+                <li><a href="Nintendo.html">Nintendo</a></li>
             </ul>
         </nav>
         <div class="menu-toggle" id="mobile-menu">
@@ -54,7 +54,31 @@
                 </div>
                 <h2>Non sei registrato?</h2>
                 <div class="register-btn">
-                    <a href="#">Registrati</a>
+                    <a href="#" onclick="openRegisterModal()">Registrati</a>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlayRegister"></div>
+            <div class="modal" id="registerModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeRegisterModal()">&times;</span>
+                    <h1>Registrazione</h1>
+                    <label for="registerEmail">E-mail:</label>
+                    <input type="email" id="registerEmail" name="registerEmail" required>
+                    <label for="registerName">Nome:</label>
+                    <input type="text" id="registerName" name="registerName" required>
+                    <label for="registerSurname">Cognome:</label>
+                    <input type="text" id="registerSurname" name="registerSurname" required>
+                    <label for="registerPassword">Password:</label>
+                    <div class="password-container">
+                        <input type="password" id="registerPassword" name="registerPassword" required>
+                        <span class="password-toggle" onclick="togglePasswordVisibility()">
+                                <img src="eye.png" alt="Toggle Password Visibility">
+                           </span>
+                    </div>
+                    <div class="submit-btn">
+                        <a href="#">Registrati</a>
+                    </div>
                 </div>
             </div>
         </nav>

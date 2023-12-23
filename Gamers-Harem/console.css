@@ -1,0 +1,73 @@
+.spacer {
+    height: 100px;
+}
+
+.spacer-bottom {
+    height: 55px;
+}
+
+@media screen and (max-width: 991px) {
+    .col-md-3 {
+        margin-bottom: 35px;
+    }
+}
+
+#overlayRegister {
+    display: none;
+}
+
+#registerModal {
+    display: none;
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: #2C2C2C;
+    padding: 10px;
+    text-align: center;
+}
+
+.modal-content {
+    border-radius: 15px;
+    background-color: #2C2C2C;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content label {
+    width: 100%;
+    text-align: center;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input,
+.password-container .password-toggle {
+    display: inline-block;
+}
+
+.password-toggle img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-body{
+    background-color: #2C2C2C;
+}
+.card-body .card-text{
+    color: gold;
+}
+
+.card-body .game-name{
+    text-align: center;
+    margin: 0;
+}
+

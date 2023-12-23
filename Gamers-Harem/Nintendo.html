@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="console.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="game-page.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <title>Zelda</title>
+    <title>Gamers'Harem - Nintento</title>
 </head>
 <body>
 <header>
@@ -84,31 +84,70 @@
         </nav>
     </div>
 </header>
-<div class="container d-flex flex-column align-items-center">
-    <div class="row">
-        <div class="col-sm-6">
-            <p class="post-title">The Legend of Zelda: Tears of the Kingdom</p>
-            <div class="game-card">
-                <img src="./images/zelda.jpg" alt="Immagine" class="img-fluid">
-                <div class="cover-bottom-bar d-flex justify-content-between">
-                    <p class="game-price">78.19€</p>
-                    <div>
-                        <button>Aggiungi</button>
-                        <button>Acquista</button>
+
+    <div class="spacer"></div> <!-- Aggiunto uno spazio sopra le cards -->
+
+    <div class="container mt-5">
+        <div class="row justify-content-center"> 
+            <div class="col-md-3">
+                <a href="zel.html">
+                <div class="card">
+                    <img src="./images/zelda.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">The Legend of Zelda: Tears of the Kingdom</p>
+                        <p class="card-text text-center";>78.19€</p>
                     </div>
                 </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="mhr.html">
+                <div class="card">
+                    <img src="./images/MHR.jpg" class="card-img-top" alt="Immagine 1">
+                    <div class="card-body">
+                        <p class="card-text game-name" style="color: white;">Monster Hunter: Rise</p>
+                        <p class="card-text text-center">15.00€</p>
+                    </div>
+                </div>
+                </a>
             </div>
         </div>
-        <div class="game-info col-sm-6 d-flex flex-column text-center">
-            <p class="game-name">The Legend of Zelda: Tears of the Kingdom</p>
-            <span class="bottom-line"></span>
-            <p class="game-description">
-                Un epico viaggio attraverso Hyrule e i suoi cieli ti attende in The Legend of Zelda: Tears of the Kingdom per Nintendo Switch. Crea la tua avventura in un mondo
-                dove potrai lasciare libero sfogo all'immaginazione.
-            </p>
+    </div>
+
+    <div class="spacer-bottom"></div> <!-- Aggiunto uno spazio sotto le cards -->
+
+    <div class="bottom-area">
+        <div class="field"> About us:
+            <div class="content">
+                <span>Siamo due studenti universitari appassionati di tecnologia e innovazione, entrambi iscritti al corso di Computer Science presso l'Università Parthenope di Napoli.<br>
+                    La nostra missione è esplorare le frontiere della conoscenza informatica e tradurre le nostre passioni in progetti concreti.
+                    Condividiamo l'entusiasmo per le sfide informatiche e l'interesse per le soluzioni creative.</span>
+            </div>
+        </div>
+        <div class="field"> Contatti:
+            <div class="content">
+                <span> francesco.porritiello001@studenti.uniparthenope.it </span>
+                <span> francesco.esposito034@studenti.uniparthenope.it </span>
+            </div>
         </div>
     </div>
-</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var maxLength = 25; // Numero massimo di caratteri
+          var elements = document.querySelectorAll(".game-name"); // Seleziona tutti gli elementi con la classe "game-name"
+      
+          elements.forEach(function (element) {
+            var text = element.innerText;
+      
+            if (text.length > maxLength) {
+              var truncatedText = text.substring(0, maxLength) + "...";
+              element.innerText = truncatedText;
+            }
+          });
+        });
+      </script>
 </body>
 <script src="app.js"></script>
 </html>
