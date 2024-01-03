@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../static/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="../static/utente.css">
+    <title>Area Personale</title>
+</head>
+<body>
+<header>
+        <div class="navbar">
+            <img class="main-logo" src="../static/favicon.png" alt="main-logo">
+            <a href="{{ url_for('index') }}" class="navbar-name-site"> Gamers'Harem </a>
+            <nav class="nav">
+                <ul>
+                <li><a href="{{ url_for('pc') }}">Pc</a></li>
+                <li><a href="{{ url_for('playstation') }}">Playstation</a></li>
+                <li><a href="{{ url_for('xbox') }}">Xbox</a></li>
+                <li><a href="{{ url_for('nintendo') }}">Nintendo</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="search-box">
+                <label for="searchInput"></label><input type="text" id="searchInput" placeholder="Cerca">
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h4>Carrello Vuoto.</h4>
+                    <h5>Il tuo carrello è come una tela ancora da dipingere.<br>Aggiungi emozionanti avventure e giochi epici per dare vita alla tua esperienza di gioco un clic alla volta!</h5>
+                </div>
+            </div>
+            <img src="../static/carrello.png" alt="Carrello" class="cart-logo" onclick="openModal()">
+            <a href="javascript:void(0);" id="login-menu"><img src="../static/login.png" class="login-logo" alt="..."></a>
+            <nav class="login-box" id="loginMenu">
+                <div class="login-logo-container">
+                    <h1>Login</h1>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="submit-btn">
+                        <a href="#">Invia</a>
+                    </div>
+                    <h2>Non sei registrato?</h2>
+                    <div class="register-btn">
+                        <a href="#" onclick="openRegisterModal()">Registrati</a>
+                    </div>
+                </div>
+
+                <div class="overlay" id="overlayRegister"></div>
+                <div class="modal" id="registerModal">
+                    <span class="close" onclick="closeRegisterModal()">&times;</span>
+                    <div class="dividereg">
+                        <h6>Registrazione</h6>
+                        <label for="registerEmail">E-mail:</label>
+                        <input type="email" id="registerEmail" name="registerEmail" required>
+                        <label for="registerNickname">Nickname:</label>
+                        <input type="text" id="registerNickname" name="registerNickname" required>
+                        <label for="registerPassword">Password:</label>
+                        <div class="password-container">
+                            <input type="password" id="registerPassword" name="registerPassword" required>
+                            <span class="password-toggle" onclick="togglePasswordVisibility()">
+                                <img src="../static/eye.png" alt="Toggle Password Visibility">
+                           </span>
+                        </div>
+                        <div class="submit-btn">
+                            <a href="#">Registrati</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <div class="main-panel">
+        <div class="user-avatar">
+            <a class="avatar"><img src="../static/login2.png" alt="User Avatar"></a>
+            <p class="user-name">{{session['username']}}</p>
+        </div>
+    
+        <div class="user-profile-tabs">
+            <a href="#" class="el1" data-tab="orders">Ordini</a>
+            <a href="#" class="el2" data-tab="wishlist">Wishlist</a>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div id="orders" class="tab-content">
+            <p>Contenuto degli ordini...</p>
+        </div>
+    
+        <div id="wishlist" class="tab-content">
+            <p>Contenuto della wishlist...</p>
+        </div>
+    </div>
+    <script>
+         document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.user-profile-tabs a');
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function (event) {
+            event.preventDefault();
+            const tabId = this.getAttribute('data-tab');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            tabs.forEach(t => {
+                t.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+    });
+    </script>
+<div class="separator"></div>
+</body>
+<script src="../static/app.js"></script>
+</html>
