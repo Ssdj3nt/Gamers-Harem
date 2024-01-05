@@ -50,3 +50,22 @@ Funzionalità Principali:
 ![Immagine 4](Screen/4.png)
 
 ![Immagine 5](Screen/5.png) ![Immagine 6](Screen/6.png) ![Immagine 7](Screen/7.png)
+
+Questo repository è stato creato a scopo universitario e utilizza immagini delle copertine di videogiochi per scopi puramente illustrativi. Si prega di leggere attentamente le seguenti linee guida per garantire il rispetto dei diritti d'autore e l'uso appropriato delle risorse.
+
+### Linee Guida:
+
+1. **Scopo Illustrativo:** Le immagini delle copertine dei videogiochi sono utilizzate esclusivamente per descrivere il contenuto del progetto e non vengono sfruttate commercialmente. Il progetto si concentra su scopi accademici e non cerca di appropriarsi dei diritti d'autore associati alle immagini.
+
+2. **Non Implicazione di Affiliazione:** La presenza di immagini di copertine di videogiochi non implica alcuna affiliazione con i giochi specifici o le società di sviluppo. Questo progetto è indipendente e non è associato a nessun marchio o prodotto specifico.
+
+3. **Rispetto dei Diritti d'Autore:** Ci impegniamo a rispettare i diritti d'autore e a rimuovere immediatamente qualsiasi contenuto che violi le leggi sul copyright su richiesta. Se sei il detentore dei diritti di una delle immagini e desideri che vengano rimosse, contattaci e provvederemo prontamente.
+
+4. **Esclusione di Responsabilità:** Non rivendichiamo alcun diritto sulle immagini delle copertine dei videogiochi, che rimangono di proprietà dei rispettivi detentori dei diritti d'autore. L'uso di tali immagini è conforme alle leggi sul copyright e si limita a scopi educativi.
+
+## Licenza
+
+Questo progetto è rilasciato con la licenza [inserire il tipo di licenza scelto] per regolamentare l'uso, la modifica e la distribuzione del codice e delle risorse.
+
+Grazie per il tuo interesse e la tua comprensione. Se hai domande o preoccupazioni, non esitare a contattarci.
+
