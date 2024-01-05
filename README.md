@@ -41,23 +41,16 @@ Funzionalità Principali:
 
 ## Immagini
 
-1. ![Immagine 1](url_immagine1.png)
-   Descrizione o contesto per l'immagine 1.
+1. ![Immagine 1](Screen/1.png)
 
-2. ![Immagine 2](url_immagine2.png)
-   Descrizione o contesto per l'immagine 2.
+2. ![Immagine 2](Screen/2.png)
 
-3. ![Immagine 3](url_immagine3.png)
-   Descrizione o contesto per l'immagine 3.
+3. ![Immagine 3](Screen/3.png)
 
-4. ![Immagine 4](url_immagine4.png)
-   Descrizione o contesto per l'immagine 4.
+4. ![Immagine 4](Screen/4.png)
 
-5. ![Immagine 5](url_immagine5.png)
-   Descrizione o contesto per l'immagine 5.
+5. ![Immagine 5](Screen/5.png)
 
-6. ![Immagine 6](url_immagine6.png)
-   Descrizione o contesto per l'immagine 6.
+6. ![Immagine 6](Screen/6.png)
 
-7. ![Immagine 7](url_immagine7.png)
-   Descrizione o contesto per l'immagine 7.
+7. ![Immagine 7](Screen/7.png)
