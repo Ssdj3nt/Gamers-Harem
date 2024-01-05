@@ -64,4 +64,8 @@ Questo progetto è rilasciato con la licenza Apache per regolamentare l'uso, la 
 
 ![Immagine 4](Screen/4.png)
 
-![Immagine 5](Screen/5.png) ![Immagine 6](Screen/6.png) ![Immagine 7](Screen/7.png)
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="Screen/5.png" alt="Immagine 5" width="100px">
+  <img src="Screen/6.png" alt="Immagine 6" width="100px">
+  <img src="Screen/7.png" alt="Immagine 7" width="100px">
+</div>
