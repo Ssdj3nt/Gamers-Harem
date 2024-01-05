@@ -41,16 +41,12 @@ Funzionalità Principali:
 
 ## Immagini
 
-1. ![Immagine 1](Screen/1.png)
+![Immagine 1](Screen/1.png)
 
-2. ![Immagine 2](Screen/2.png)
+![Immagine 2](Screen/2.png)
 
-3. ![Immagine 3](Screen/3.png)
+![Immagine 3](Screen/3.png)
 
-4. ![Immagine 4](Screen/4.png)
+![Immagine 4](Screen/4.png)
 
-5. ![Immagine 5](Screen/5.png)
-
-6. ![Immagine 6](Screen/6.png)
-
-7. ![Immagine 7](Screen/7.png)
+![Immagine 5](Screen/5.png) ![Immagine 6](Screen/6.png) ![Immagine 7](Screen/7.png)
