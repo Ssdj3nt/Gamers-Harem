@@ -38,19 +38,6 @@ Funzionalità Principali:
     Pagamenti:
        Pagamento sicuro tramite integrazione con il sistema di pagamento PayPal.
 
-
-## Immagini
-
-![Immagine 1](Screen/1.png)
-
-![Immagine 2](Screen/2.png)
-
-![Immagine 3](Screen/3.png)
-
-![Immagine 4](Screen/4.png)
-
-![Immagine 5](Screen/5.png) ![Immagine 6](Screen/6.png) ![Immagine 7](Screen/7.png)
-
 Questo repository è stato creato a scopo universitario e utilizza immagini delle copertine di videogiochi per scopi puramente illustrativi. Si prega di leggere attentamente le seguenti linee guida per garantire il rispetto dei diritti d'autore e l'uso appropriato delle risorse.
 
 ### Linee Guida:
@@ -65,7 +52,16 @@ Questo repository è stato creato a scopo universitario e utilizza immagini dell
 
 ## Licenza
 
-Questo progetto è rilasciato con la licenza [inserire il tipo di licenza scelto] per regolamentare l'uso, la modifica e la distribuzione del codice e delle risorse.
+Questo progetto è rilasciato con la licenza [Apache] per regolamentare l'uso, la modifica e la distribuzione del codice e delle risorse.
 
-Grazie per il tuo interesse e la tua comprensione. Se hai domande o preoccupazioni, non esitare a contattarci.
+## Immagini
 
+![Immagine 1](Screen/1.png)
+
+![Immagine 2](Screen/2.png)
+
+![Immagine 3](Screen/3.png)
+
+![Immagine 4](Screen/4.png)
+
+![Immagine 5](Screen/5.png) ![Immagine 6](Screen/6.png) ![Immagine 7](Screen/7.png)
