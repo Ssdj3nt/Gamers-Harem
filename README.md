@@ -37,3 +37,27 @@ Funzionalità Principali:
 
     Pagamenti:
        Pagamento sicuro tramite integrazione con il sistema di pagamento PayPal.
+
+
+## Immagini
+
+1. ![Immagine 1](url_immagine1.png)
+   Descrizione o contesto per l'immagine 1.
+
+2. ![Immagine 2](url_immagine2.png)
+   Descrizione o contesto per l'immagine 2.
+
+3. ![Immagine 3](url_immagine3.png)
+   Descrizione o contesto per l'immagine 3.
+
+4. ![Immagine 4](url_immagine4.png)
+   Descrizione o contesto per l'immagine 4.
+
+5. ![Immagine 5](url_immagine5.png)
+   Descrizione o contesto per l'immagine 5.
+
+6. ![Immagine 6](url_immagine6.png)
+   Descrizione o contesto per l'immagine 6.
+
+7. ![Immagine 7](url_immagine7.png)
+   Descrizione o contesto per l'immagine 7.
