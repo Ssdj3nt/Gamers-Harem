@@ -52,7 +52,7 @@ Questo repository è stato creato a scopo universitario e utilizza immagini dell
 
 ## Licenza
 
-Questo progetto è rilasciato con la licenza [Apache] per regolamentare l'uso, la modifica e la distribuzione del codice e delle risorse.
+Questo progetto è rilasciato con la licenza Apache per regolamentare l'uso, la modifica e la distribuzione del codice e delle risorse.
 
 ## Immagini
 
