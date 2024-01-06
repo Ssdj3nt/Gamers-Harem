@@ -140,3 +140,27 @@ function findGameUrlInDatabase(query) {
     }
     return null;
 }
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
+  deferredPrompt = event;
+  showInstallButton();
+});
+
+function showInstallButton() {
+  const installButton = document.getElementById('installButton');
+  installButton.style.display = 'block';
+  installButton.addEventListener('click', () => {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('L\'utente ha accettato l\'installazione');
+      } else {
+        console.log('L\'utente ha rifiutato l\'installazione');
+      }
+      deferredPrompt = null;
+    });
+  });
+}
