@@ -54,6 +54,8 @@ Questo repository è stato creato a scopo universitario e utilizza immagini dell
 
 Questo progetto è rilasciato con la licenza Apache per regolamentare l'uso, la modifica e la distribuzione del codice e delle risorse.
 
+<a href="https://ssdj3nt.github.io">Website Static Preview<a>
+
 ## Immagini
 
 ![Immagine 1](Screen/1.png)
