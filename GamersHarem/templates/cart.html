@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FFD700">
+    <meta name="description" content="Gamers'Harem è un digital marketplace dove si possono acquistare contenuti videoludici per ogni piattaforma.">
+    <link rel="icon" href="../static/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/cart.css">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('{{ url_for("static", filename="service-worker.js") }}')
+                .then(registration => console.log('Service Worker registered with scope:', registration.scope))
+                .catch(error => console.error('Service Worker registration failed:', error));
+        }
+    </script>
+
+    <title>Gamers'Harem</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img class="main-logo" src="../static/favicon.png" alt="main-logo">
+            <a href="{{url_for('index')}}" class="navbar-name-site"> Gamers'Harem </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="{{url_for('pc')}}">Pc</a></li>
+                    <li><a href="{{url_for('playstation')}}">Playstation</a></li>
+                    <li><a href="{{url_for('xbox')}}">Xbox</a></li>
+                    <li><a href="{{url_for('nintendo')}}">Nintendo</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="search-box">
+                <form action="{{url_for('search')}}" method="GET">
+                    <label for="searchInput"></label>
+                    <input type="text" id="searchInput" name="query" placeholder="Cerca" onkeydown="if (event.keyCode === 13) this.form.submit()">
+                </form>
+            </div>
+        <a href="{{url_for('cart')}}">
+            <img src="../static/carrello.png" alt="Carrello" class="cart-logo">
+        </a>
+            <a id="login-menu"><img src="../static/login.png" class="login-logo" alt="..."></a>
+            <nav class="login-box" id="loginMenu">
+                {% if not session['username'] %}
+                <div class="login-logo-container">
+                    <h1>Login</h1>
+                    <form action="{{url_for('login')}}" method="post">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="pass" required>
+                        <button class="log-in" type="submit">Log In</button>
+                    </form>
+                    <h2>Non sei registrato?</h2>
+                    <button class="register" type="submit" onclick="openRegisterModal()">Registrati</button>
+                </div>
+                {% else %}
+                <div class="log-info">
+                    <p>Benvenuto, {{ session['username'] }}!</p>
+                    <a href="{{url_for('utente')}}">
+                        <button class="profile">Area Personale</button>
+                    </a>
+                    <form action="{{url_for('logout')}}" method="post">
+                        <input type="submit" value="Log Out">
+                    </form>
+                </div>
+                {% endif %}
+                <div class="overlay" id="overlayRegister"></div>
+                <div class="modal" id="registerModal">
+                    <span class="close" onclick="closeRegisterModal()">&times;</span>
+                    <div class="dividereg">
+                        <h6>Registrazione</h6>
+                        <form action="{{url_for('register')}}" method="post">
+                            <label for="registerEmail">E-mail:</label>
+                            <input type="email" id="registerEmail" name="email" required>
+                            <label for="registerNickname">Nickname:</label>
+                            <input type="text" id="registerNickname" name="nickname" required>
+                            <label for="registerPassword">Password:</label>
+                            <div class="password-container">
+                                <input type="password" id="registerPassword" name="pass" required>
+                                <span class="password-toggle" onclick="togglePasswordVisibility()">
+                        <img src="../static/eye-closed.png" alt="Toggle Password Visibility">
+                    </span>
+                            </div>
+                            <button class="register" type="submit">Registrati</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <p id="text" class="center">Il tuo Carrello</p>
+    <div id="cart-items">
+    </div>
+<script>
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length > 0) {
+        var cartContainer = document.getElementById('cart-items');
+        var totalQuantity = 0;
+        var totalPrice = 0;
+
+        cart.forEach(function (product, index) {
+            var cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+
+            var gameElement = document.createElement('p');
+            gameElement.classList.add('game', 'center');
+            gameElement.innerHTML = `${product.name} - ${product.price.toFixed(2)}€`;
+
+            var deleteButton = document.createElement('button');
+            deleteButton.classList.add('delete-button');
+            deleteButton.innerText = 'X';
+            deleteButton.onclick = function () {
+                removeFromCart(index);
+            };
+
+            cartItem.appendChild(gameElement);
+            cartItem.appendChild(gameElement);
+            cartItem.appendChild(deleteButton);
+
+            cartContainer.appendChild(cartItem);
+
+            totalQuantity += 1;
+            totalPrice += product.price;
+        });
+
+        var totalContainer = document.createElement('div');
+        totalContainer.classList.add('total-container');
+        totalContainer.innerHTML = `<p class="totale">Totale: ${totalQuantity} giochi - ${totalPrice.toFixed(2)}€</p>`;
+
+        totalContainer.appendChild(payNowButton);
+        cartContainer.appendChild(totalContainer);
+    } else {
+        document.write('<p class="info">Il tuo carrello è vuoto.</p>');
+    }
+
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        location.reload();
+    }
+</script>
+        <script>
+    var payNowButton = document.createElement('button');
+    payNowButton.classList.add('pay-now-button');
+    payNowButton.innerText = 'Paga Ora';
+    payNowButton.onclick = function () {
+        purchaseGame(totalPrice);
+    };
+
+    totalContainer.appendChild(payNowButton);
+    cartContainer.appendChild(totalContainer);
+    function purchaseGame(totalPrice) {
+        if (totalPrice > 0) {
+            fetch('/paypal_payment?price=' + encodeURIComponent(totalPrice))
+                .then(response => response.json())
+                .then(data => {
+                    if (data.approval_url) {
+                        window.location.href = data.approval_url;
+                    } else {
+                        console.error('URL di approvazione non presente nella risposta PayPal.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Errore durante la richiesta PayPal:', error);
+                });
+        } else {
+            console.error('Il totale del carrello è zero o negativo.');
+        }
+    }
+    </script>
+    <script src="../static/app.js"></script>
+
+</body>
+
+</html>

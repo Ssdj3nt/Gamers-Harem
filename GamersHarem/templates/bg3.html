@@ -56,7 +56,9 @@
                     <h5>Il tuo carrello è come una tela ancora da dipingere.<br>Aggiungi emozionanti avventure e giochi epici per dare vita alla tua esperienza di gioco un clic alla volta!</h5>
                 </div>
             </div>
-            <img src="../static/carrello.png" alt="Carrello" class="cart-logo" onclick="openModal()">
+        <a href="{{url_for('cart')}}">
+            <img src="../static/carrello.png" alt="Carrello" class="cart-logo">
+        </a>
             <a id="login-menu"><img src="../static/login.png" class="login-logo" alt="..."></a>
             <nav class="login-box" id="loginMenu">
                 {% if not session['username'] %}
@@ -116,7 +118,7 @@
                     <div class="cover-bottom-bar d-flex justify-content-between">
                         <p class="game-price" data-price="40.00">40,00€</p>
                         <div>
-                            <button>Aggiungi</button>
+                            <button onclick="addToCart()">Aggiungi</button>
                             <button onclick="purchaseGame()">Acquista</button>
                         </div>
                     </div>
@@ -148,22 +150,6 @@
         </div>
     </div>
     <script>
-        document.getElementById('searchInput').addEventListener('keydown', function (event) {
-            if (event.keyCode === 13) {
-                event.preventDefault();
-                const query = this.value.trim();
-                const gameUrl = findGameUrlInDatabase(query);
-
-                if (gameUrl) {
-                    window.location.href = '/' + gameUrl;
-                } else {
-                    console.log('Nessun risultato trovato per la query:', query);
-                }
-            }
-        });
-    </script>
-
-    <script>
         function purchaseGame() {
           var gamePriceElement = document.querySelector('.game-price');
 
@@ -184,6 +170,24 @@
         }
     </script>
 
+<script>
+    function addToCart() {
+        var productName = document.querySelector('.game-name').innerText;
+        var productPrice = document.querySelector('.game-price').getAttribute('data-price');
+        var product = {
+            name: productName,
+            price: parseFloat(productPrice)
+        };
+        addToCartAndRefresh(product);
+    }
+
+    function addToCartAndRefresh(product) {
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert('Prodotto aggiunto al carrello!');
+    }
+</script>
     <script src="../static/app.js"></script>
 </body>
 

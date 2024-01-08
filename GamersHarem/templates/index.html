@@ -55,7 +55,9 @@
                     <h5>Il tuo carrello è come una tela ancora da dipingere.<br>Aggiungi emozionanti avventure e giochi epici per dare vita alla tua esperienza di gioco un clic alla volta!</h5>
                 </div>
             </div>
-            <img src="../static/carrello.png" alt="Carrello" class="cart-logo" onclick="openModal()">
+        <a href="{{url_for('cart')}}">
+            <img src="../static/carrello.png" alt="Carrello" class="cart-logo">
+        </a>
             <a id="login-menu"><img src="../static/login.png" class="login-logo" alt="..."></a>
             <nav class="login-box" id="loginMenu">
                 {% if not session['username'] %}

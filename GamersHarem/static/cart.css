@@ -1,0 +1,69 @@
+body{
+    background-color: gold;
+}
+
+.center{
+    text-align: center;
+}
+
+#text{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #2c2c2c;
+}
+
+.game {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.delete-button {
+    background-color: #ff0000;
+    color: #2c2c2c;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.totale{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.pay-now-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.pay-now-button:hover {
+    background-color: #45a049;
+}
+
+.info{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

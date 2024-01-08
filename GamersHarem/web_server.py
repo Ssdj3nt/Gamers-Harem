@@ -134,6 +134,11 @@ def utente():
     return render_template('utente.html')
 
 
+@app.route('/cart')
+def cart():
+    return render_template('cart.html')
+
+
 @app.route('/manifest.json')
 def manifest():
     return app.send_static_file('manifest.json')
